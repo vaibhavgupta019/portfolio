@@ -1,7 +1,12 @@
-document.querySelector('.resume-dropdown button').addEventListener('mouseover', () => {
-    document.querySelector('.dropdown-content').style.display = 'block';
-});
+document.addEventListener("DOMContentLoaded", function() {
+    const resumeButton = document.getElementById("resume-btn");
+    const resumeOptions = document.getElementById("resume-options");
 
-document.querySelector('.resume-dropdown').addEventListener('mouseleave', () => {
-    document.querySelector('.dropdown-content').style.display = 'none';
+    resumeButton.addEventListener("mouseover", function() {
+        resumeOptions.style.display = "block";
+    });
+
+    resumeButton.addEventListener("mouseout", function() {
+        resumeOptions.style.display = "none";
+    });
 });
