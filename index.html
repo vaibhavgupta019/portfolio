@@ -3,100 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Vaibhav Gupta</title>
+    <title>Vaibhav Gupta | Data Engineer</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-
-    <!-- 🔹 Top Navigation Bar -->
-    <header class="top-bar">
-        <div class="logo">Vaibhav Gupta</div>
-        <nav class="navigation">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li class="dropdown">
-                    <a href="#">Blogs</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="blog1.html">Blog 1</a></li>
-                        <li><a href="blog2.html">Blog 2</a></li>
+    <header>
+        <div class="top-bar">
+            <div class="left">Vaibhav Gupta</div>
+            <div class="right">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Work Experience</a></li>
+                        <li><a href="#education">Education</a></li>
                     </ul>
-                </li>
-            </ul>
-        </nav>
+                </nav>
+            </div>
+        </div>
     </header>
-
-    <!-- 🔹 About Me Section -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <img src="images/profile.jpg" alt="Vaibhav Gupta" class="profile-pic">
-        <p>Data Engineer with over 2+ years of experience in designing, developing, and optimizing data pipelines. Proficient in SQL, Python, Azure Synapse, and more.</p>
-        <div class="buttons">
-            <a href="mailto:vaibhavgupta9926@gmail.com" class="icon email">📧 Email</a>
-            <a href="https://linkedin.com/in/vaibhav-g-6b5927144" class="icon linkedin">🔗 LinkedIn</a>
-            <a href="https://www.naukri.com" class="icon naukri">🏢 Naukri</a>
-            <div class="resume-dropdown">
-                <button>📜 Resume</button>
-                <div class="dropdown-content">
-                    <a href="resume.pdf" target="_blank">View</a>
-                    <a href="resume.pdf" download>Download</a>
-                </div>
+    
+    <section id="about">
+        <img src="profile.jpg" alt="Vaibhav Gupta" class="profile-pic">
+        <p>Data Engineer with over two years of experience in designing, developing, and optimizing data pipelines and systems...</p>
+        <div class="contact-buttons">
+            <a href="mailto:vaibhavgupta9926@gmail.com"><img src="email-icon.png" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/vaibhav-g-6b5927144" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://www.naukri.com/mnjuser/profile" target="_blank"><img src="naukri-icon.png" alt="Naukri"></a>
+            <button class="resume-btn">Resume</button>
+            <div class="resume-options">
+                <a href="resume.pdf" target="_blank">View</a>
+                <a href="resume.pdf" download>Download</a>
             </div>
         </div>
     </section>
 
-    <!-- 🔹 Skills Section -->
-    <section id="skills" class="section">
+    <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>SQL</li>
-            <li>Azure Synapse</li>
-            <li>Azure Data Factory</li>
-            <li>PowerShell</li>
-        </ul>
-    </section>
-
-    <!-- 🔹 Certifications Section -->
-    <section id="certifications" class="section">
-        <h2>Certifications</h2>
+        <div class="skill-list">
+            <span>SQL</span>
+            <span>Azure Synapse Analytics</span>
+            <span>Azure Data Factory</span>
+            <span>PowerShell</span>
+        </div>
+        <h3>Certifications</h3>
         <ul>
             <li>Databricks Certified Data Engineer Associate</li>
-            <li>Microsoft Certified Azure Data Engineer Associate</li>
-            <li>Microsoft Certified Azure Data Fundamentals</li>
+            <li>Microsoft Certified Azure Data Engineer Associate (DP 203)</li>
         </ul>
     </section>
-
-    <!-- 🔹 Work Experience Section -->
-    <section id="experience" class="section">
+    
+    <section id="experience">
         <h2>Work Experience</h2>
         <div class="timeline">
-            <div class="experience-card">
-                <img src="images/tcs-logo.png" alt="TCS">
-                <h3>Azure Data Engineer</h3>
-                <p>Tata Consultancy Services | Oct 2024 - Present</p>
-            </div>
-            <div class="experience-card">
-                <img src="images/cognizant-logo.png" alt="Cognizant">
-                <h3>Azure Data Engineer</h3>
-                <p>Cognizant | May 2022 - Sep 2024</p>
-            </div>
+            <div class="experience-card">TCS - Azure Data Engineer (Oct 2024 - Present)</div>
+            <div class="experience-card">Cognizant - Azure Data Engineer (May 2022 - Sept 2024)</div>
         </div>
     </section>
-
-    <!-- 🔹 Education Section -->
-    <section id="education" class="section">
+    
+    <section id="education">
         <h2>Education</h2>
         <div class="timeline">
-            <div class="education-entry">
-                <h3>Bhilai Institute of Technology</h3>
-                <p>Electronics and Telecommunication Engineering | CPI: 9.5</p>
-            </div>
+            <div class="education-card">Bhilai Institute of Technology - B.Tech (CPI: 9.5)</div>
         </div>
     </section>
-
-    <script src="script.js"></script>
 </body>
 </html>
