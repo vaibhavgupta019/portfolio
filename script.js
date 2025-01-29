@@ -6,7 +6,17 @@ document.addEventListener("DOMContentLoaded", function() {
         resumeOptions.style.display = "block";
     });
 
-    resumeButton.addEventListener("mouseout", function() {
+    resumeButton.addEventListener("mouseleave", function() {
         resumeOptions.style.display = "none";
+    });
+
+    // Smooth scrolling for section links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
 });
