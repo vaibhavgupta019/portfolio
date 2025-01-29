@@ -1,4 +1,3 @@
-// JavaScript to toggle resume options
 document.querySelector('.resume-dropdown button').addEventListener('mouseover', () => {
     document.querySelector('.dropdown-content').style.display = 'block';
 });
